@@ -35,9 +35,13 @@ def prepare_eth(eth):
     data to be explored.
     '''
     # irrelevant stock columns
-    eth.drop(columns=['Dividends','Stock Splits'])
+    eth = eth.drop(columns=['Dividends','Stock Splits'])
     # date information in columns
     eth['month'] = eth.index.month
     eth['year'] = eth.index.year
     eth['weekday'] = eth.index.dayofweek
+    eth.columns = eth.columns.str.lower()
+    eth['weekday'] = eth['weekday'].map({0:'Monday',1:'Tuesday',2:'Wednesday',
+                        3:'Thursday',4:'Friday',5:'Saturday', 6:'Sunday'})
+    eth['high_low_diff'] = eth.high - eth.low
     return eth
