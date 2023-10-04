@@ -1,37 +1,27 @@
 # Ethy (Easy) Prophet
 ---
 ## Project Description 
-Can the price of Ethereum be predicted? 
+Ethereum is a cryptocurrency that has historically been extremely volatile, whether federal governments are writing in new regulations or the latest update to the blockchain has been released, the predictability is fairly difficult. Can a the prophet model predict on a 4-hour concurrent basis?
 
 ## Project Goals
 ---
-- Discover independence of features within data
-- Utilizing said features to develop machine learning models that will determine the quality of wine 
-- Determine the drivers of quality
-- The insights discovered will be used to estimate quality and provide a more robust understanding of the attributes of a the wine and it's associated quality
+- Sufficient exploration to learn more about ethereum price characteristics
+- Create a tuned model that will be capable of predicting the price of Ethereum concurrently on a 4-hour basis.
 
 ## Initial Thoughts
 --- 
-The drivers will likely have an equal weight when determining the quality -- this will be due to the quality likely scored by a professional who is cognizant of their biasis and would like to score on an objective scale. There will still likely be clusters based on data for the wines, since different wines will share qualities. 
+Ethereum (cryptocurrencies) have inherintly a lot of volatility due to contraversy. There's constant new regulations and constant new developments that could be factors outside of available data. So coming into this project there is a degree of reluctance that the algorithm will be able to extrapolate accurate predictions. 
 
 ## Planning
 --- 
 1. Acquire data from yfinance (which retrieves from coinmarketcap)
-2. Prepare data accordingly for exploration & machine learning needs
-    a. Assign date time to index
-    b. removing unneeded columns & add helpful columns
-    c. snake case columns
-    d. remap weekday values
-    e. feat engineer high-low diff col
-3. Explore data for assocations with quality (correlation tests)
+2. Looking at sub-daily data - find best observations to accurately predict on this
+    a. remap 'close' as y and datetime as 'ds'
+3. Explore and analyze data for better insights for hypertuning model
     a. Determine our baseline prediction
-    b. Determine which features would be best to cluster
-    c. Create new column of clustered data
-4. Develop a model to further understand churn
-    a. Use various models to determine what algorithm are best for the data
-    b. Select best model based on evaluation metrics
-    c. Evaluate all models on respective test data
-    d. Tune hyperparameters
+        1. Last Observed value
+        2. Simple Average
+        3. Moving Average
 
 ## Data Dictionary
 --- 
@@ -46,18 +36,20 @@ The drivers will likely have an equal weight when determining the quality -- thi
 | weekday   | a text indicator of what day of the week it is |
 
 
-
-
 ## Reproducability Requirements
 ---
 1. Clone repo
-2. Run notebook
+RUN OPTIONS:
+    2a. Local machine must have python 3.7 and prophet downloaded
+    2b. Using Google Colab drop wrangle into files
+3. Run notebook
 
 ## Conclusions 
-- Volatility of Ethereum makes it very hard to predict seasonality / trend on a micro scale
+- Volatility of Ethereum makes it very hard to predict seasonality / trend on a macro scale but with the recent
+consistency there's sufficient data to be able to make a fairly close prediction
 - The nature of price is that is a quasi-schotastic value that has lots of factors even outside that of which\
-can be seen on a time scale
+can be seen on a time scale. Such as news, improvements and maybe even downtime
 
 ## Recommendation
-- Downsampling to a more granular measure of time to compare results
 - Utilize other models outside of a time series -- ex. utilizing trade volume, open, high and low for a regression model
+- Cross validation to improve model accuracy
