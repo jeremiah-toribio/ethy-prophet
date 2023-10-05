@@ -9,7 +9,9 @@ Ethereum is a cryptocurrency that has historically been extremely volatile, whet
 **Method**\
 A time series analysis (TSA) on 6-weeks of Ethereum price historical data, create a model using Facebook Prophet algorithm. Predicting the price on a 4-hour basis using concurrent data.\
 **Takeaways**\
-Model was able to provide predictions better than baselines, varying results on selected frame of historical data & train/test split.
+Model was able to provide predictions better than baselines, varying results on selected frame of historical data & train/test split.\
+**Skills:**\
+Python, Google Colab, Pandas, EDA, Facebook Prophet, SciKit-Learn, Time Series Analysis(TSA)
 
 ## Project Goals
 ---
