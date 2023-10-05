@@ -39,8 +39,8 @@ Ethereum (cryptocurrencies) have inherintly a lot of volatility due to contraver
 ## Reproducability Requirements
 ---
 1. Clone repo
-RUN OPTIONS:
-    2a. Local machine must have python 3.7 and prophet downloaded
+RUN OPTIONS:\
+    2a. Local machine must have python 3.7 and prophet downloaded\
     2b. Using Google Colab drop wrangle into files
 3. Run notebook
 
