@@ -1,7 +1,15 @@
 # Ethy (Easy) Prophet
 ---
-## Project Description 
-Ethereum is a cryptocurrency that has historically been extremely volatile, whether federal governments are writing in new regulations or the latest update to the blockchain has been released, the predictability is fairly difficult. Can a the prophet model predict on a 4-hour concurrent basis?
+## Project Description
+### Ethereum Price Predictions
++++++++++++++++++\
+\
+**Overview:**\
+Ethereum is a cryptocurrency that has historically been extremely volatile, whether federal governments are writing in new regulations or the latest update to the blockchain has been released, the predictability is fairly difficult. \
+**Method**\
+A time series analysis (TSA) on 6-weeks of Ethereum price historical data, create a model using Facebook Prophet algorithm. Predicting the price on a 4-hour basis using concurrent data.\
+**Conclusion**\
+Model was able to provide predictions better than baselines, varying results on selected frame of historical data & train/test split.
 
 ## Project Goals
 ---
