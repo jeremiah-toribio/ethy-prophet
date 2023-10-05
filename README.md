@@ -24,14 +24,14 @@ Ethereum (cryptocurrencies) have inherintly a lot of volatility due to contraver
 
 ## Planning
 --- 
-1. Acquire data from yfinance (which retrieves from coinmarketcap)
-2. Looking at sub-daily data - find best observations to accurately predict on this
-    a. remap 'close' as y and datetime as 'ds'
-3. Explore and analyze data for better insights for hypertuning model
-    a. Determine our baseline prediction
-        1. Last Observed value
-        2. Simple Average
-        3. Moving Average
+1. Acquire data from yfinance (which retrieves from coinmarketcap)\
+2. Looking at sub-daily data - find best observations to accurately predict on this\
+    a. remap 'close' as y and datetime as 'ds'\
+3. Explore and analyze data for better insights for hypertuning model\
+    a. Determine our baseline prediction\
+        1. Last Observed value\
+        2. Simple Average\
+        3. Moving Average\
 
 ## Data Dictionary
 --- 
