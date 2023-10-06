@@ -38,7 +38,7 @@ Ethereum (cryptocurrencies) have inherintly a lot of volatility due to contraver
 | Feature        | Definition                                   |
 | ---            | ---                                          |
 | open  | the price of currency at the start of the reported time frame |
-| close | the price of currency at the end of reported time frame |
+| close | **TARGET** the price of currency at the end of reported time frame |
 | high | the highest price of the reported time frame |
 | low   | the lowest price of the reported time frame |
 | volume  | a cumulation of trade volume data from the largest volume exchanges |
